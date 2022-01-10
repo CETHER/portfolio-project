@@ -1,6 +1,6 @@
 :root {
   --orange: #f55422;
-  --dark-blue: #1F2235;
+  --dark-blue: #1f2235;
   --white: #ffffff;
   --sm: 14px;
   --md: 16px;
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .navbar {
@@ -43,12 +43,12 @@ body {
   display: none;
 }
 
-.navbar ul li{
+.navbar ul li {
   list-style: none;
   display: flex;
 }
 
-.navbar ul li a{
+.navbar ul li a {
   text-decoration: none;
   color: var(--white);
   text-transform: uppercase;
@@ -58,8 +58,78 @@ body {
   padding: 0;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   cursor: pointer;
   color: var(--orange);
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/keyboard.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+	position: relative;
+  padding: 100px 0;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.home p {
+  text-transform: uppercase;
+  font-size: var(--lg);
+  font-weight: bold;
+  color: var(--white);
+}
+
+.home p:nth-child(1) {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.home p:nth-child(2) {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.social-icons {
+  width: 70%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.social-icons div {
+  background-color: var(--orange);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons div img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.social-icons div img:hover {
+  cursor: pointer;
+}
