@@ -1,0 +1,14 @@
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li {
+  display: flex;
+  flex-direction: row;
+  margin: 0 18px;
+}
+
+.navbar .menu {
+  display: none;
+}
