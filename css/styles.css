@@ -26,9 +26,17 @@ body {
   height: 60px;
 }
 
+.navbar p {
+  color: var(--white);
+  font-size: var(--lg);
+  font-weight: bold;
+  padding-left: 25px;
+}
+
 .navbar .logo {
   width: 100px;
   margin-left: 25px;
+  display: none;
 }
 
 .navbar .menu {
@@ -63,7 +71,7 @@ body {
   color: var(--orange);
 }
 
-.home {
+.home-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +85,7 @@ body {
   padding: 100px 0;
 }
 
-.home::before {
+.home-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -87,19 +95,19 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.home p {
+.home-section p {
   text-transform: uppercase;
   font-size: var(--lg);
   font-weight: bold;
   color: var(--white);
 }
 
-.home p:nth-child(1) {
+.home-section p:nth-child(1) {
   margin-bottom: 40px;
   position: relative;
 }
 
-.home p:nth-child(2) {
+.home-section p:nth-child(2) {
   text-align: center;
   padding: 0 20px;
   margin-bottom: 40px;
@@ -132,4 +140,70 @@ body {
 
 .social-icons div img:hover {
   cursor: pointer;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding-top: 80px;
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-container .perfil-photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  padding-bottom: 50px;
+}
+
+.perfil-photo {
+  width: 100%;
+  border: 10px solid var(--orange);
+}
+
+.about-container .info-container {
+  padding: 0 25px;
+}
+
+.about-container .info-container h1{
+  color: var(--white);
+  font-weight: bold;
+}
+
+.info-container h1 span{
+  color: var(--orange);
+}
+
+.info-container p{
+  color: var(--white);
+  font-size: var(--sm);
+  font-weight: 300;
+  line-height: 23px;
+  padding-top: 15px;
+}
+
+.info-container .personal-data {
+  display: grid;
+  grid-template-columns: 1fr auto 2fr;
+  font-size: var(--sm);
+  line-height: 15px;
+  margin-top: 15px;
+}
+
+.personal-data p{
+  margin: 0;
+  padding: 4px;
+}
+
+.personal-data p:nth-child(3n-2){
+  font-weight: bold;
 }

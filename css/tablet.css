@@ -1,0 +1,65 @@
+:root {
+  --orange: #f55422;
+  --dark-blue: #1f2235;
+  --white: #ffffff;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li {
+  display: flex;
+  flex-direction: row;
+  margin: 0 18px;
+}
+
+.navbar .menu {
+  display: none;
+}
+
+.home-section p:nth-child(1) {
+  font-size: 40px !important;
+}
+
+.home-section p:nth-child(2) {
+  font-size: 30px !important;
+  width: 550px;
+}
+
+.social-icons {
+  width: 400px;
+}
+
+.social-icons div {
+  width: 50px;
+  height: 50px;
+}
+
+.social-icons div img {
+  width: 30px;
+  height: 30px;
+}
+
+.about-container {
+  flex-direction: row;
+}
+.about-container div {
+  width: 50%;
+}
+
+.about-container .info-container h1 {
+  font-size: 28px;
+}
+
+.info-container p {
+  font-size: var(--lg);
+}
+
+.info-container .personal-data {
+  font-size: var(--lg);
+  width: 100%;
+}
