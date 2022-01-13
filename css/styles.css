@@ -1,6 +1,7 @@
 :root {
   --orange: #f55422;
   --dark-blue: #1f2235;
+  --dark-grey: #151921;
   --white: #ffffff;
   --sm: 14px;
   --md: 16px;
@@ -228,4 +229,56 @@ body {
   border: 3px solid var(--orange);
   background-color: var(--dark-blue);
   
+}
+
+.portfolio-section {
+  text-align: center;
+  background-color: var(--dark-blue);
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.portfolio-section h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.portfolio-section h1 span{
+  color: var(--orange);
+}
+
+.cards-container {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, calc(100% - 30px));
+  gap: 26px;
+  place-content: center;
+}
+
+.project-card {
+  width: 100%;
+  background-color: var(--dark-grey);
+  padding: 20px;
+  border-bottom: 4px solid var(--orange);
+}
+.project-card img {
+  width: 100%;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.project-info h2{
+  font-size: var(--lg);
+  margin: 12px 0;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.project-info p{
+  font-size: var(--md);
+  font-weight: 300;
+  color: var(--white);
 }
