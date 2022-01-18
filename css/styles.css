@@ -82,7 +82,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 50px;
-	position: relative;
+  position: relative;
   padding: 100px 0;
 }
 
@@ -177,16 +177,16 @@ body {
   padding: 0 25px;
 }
 
-.about-container .info-container h1{
+.about-container .info-container h1 {
   color: var(--white);
   font-weight: bold;
 }
 
-.info-container h1 span{
+.info-container h1 span {
   color: var(--orange);
 }
 
-.info-container p{
+.info-container p {
   color: var(--white);
   font-size: var(--sm);
   font-weight: 300;
@@ -202,12 +202,12 @@ body {
   margin-top: 15px;
 }
 
-.personal-data p{
+.personal-data p {
   margin: 0;
   padding: 4px;
 }
 
-.personal-data p:nth-child(3n-2){
+.personal-data p:nth-child(3n-2) {
   font-weight: bold;
 }
 
@@ -228,7 +228,6 @@ body {
 .info-container .download-button:hover {
   border: 3px solid var(--orange);
   background-color: var(--dark-blue);
-  
 }
 
 .portfolio-section {
@@ -245,7 +244,7 @@ body {
   color: var(--white);
 }
 
-.portfolio-section h1 span{
+.portfolio-section h1 span {
   color: var(--orange);
 }
 
@@ -270,15 +269,86 @@ body {
   object-fit: cover;
 }
 
-.project-info h2{
+.project-info h2 {
   font-size: var(--lg);
   margin: 12px 0;
   text-transform: uppercase;
   color: var(--white);
 }
 
-.project-info p{
+.project-info p {
   font-size: var(--md);
   font-weight: 300;
   color: var(--white);
+}
+
+.resume-section {
+  padding: 100px 0;
+  background: var(--dark-blue);
+}
+
+.resume-section ul {
+  position: relative;
+  margin: 0 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-section li {
+  border: 1px solid var(--orange);
+  border-radius: 10px;
+  position: relative;
+  margin: 0 0 30px;
+  padding: 25px;
+}
+
+.resume-section li:not(:last-child):before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -27px;
+  width: 3px;
+  height: 100%;
+  background: #f55422;
+}
+
+
+.resume-section li h5 {
+  color: var(--white);
+  font-size: var(--md);
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.resume-section li strong {
+  color: var(--orange);
+  font-size: var(--sm);
+  font-weight: bold;
+}
+
+.resume-section li p {
+  color: var(--white);
+  font-size: var(--sm);
+  font-weight: 400;
+}
+
+.resume-section li div {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  background-color: var(--orange);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 4px 15px rgb(0 0 0 / 7%);
+  transition: all 0.3s ease;
+}
+
+.resume-section li div img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
 }
